@@ -532,7 +532,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f147a01ef442b2345a3546109476c690, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: RunnerPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_TagString
+      value: RunnerPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f147a01ef442b2345a3546109476c690, type: 3}
       propertyPath: m_LocalPosition.x
