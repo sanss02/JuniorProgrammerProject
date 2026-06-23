@@ -47,11 +47,12 @@ public class RunnerPlayerController : MonoBehaviour
             dirtParticle.Play();
         } else if (collision.gameObject.CompareTag("Obstacle"))
         {
-            gameOver = true;
             Debug.Log("Game Over!");
+            gameOver = true;            
             runnerPlayerAnim.SetBool("Death_b", true);
             runnerPlayerAnim.SetInteger("DeathType_int",1);
             explosionParticle.Play();
+            Destroy(collision.gameObject,0.5f);
             dirtParticle.Stop();
             runnerPlayerAudio.PlayOneShot(crashSound, 1.0f);
         }
