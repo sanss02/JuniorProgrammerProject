@@ -8,6 +8,11 @@ TagManager:
   - Ground
   - Obstacle
   - RunnerPlayer
+  - Background
+  - Money
+  - Bomb
+  - PowerUp
+  - Enemy
   layers:
   - Default
   - TransparentFX
